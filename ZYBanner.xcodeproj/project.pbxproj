@@ -15,6 +15,8 @@
 		1AB517131F5E5127003947BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB517111F5E5127003947BD /* LaunchScreen.storyboard */; };
 		1AB5171E1F5E5127003947BD /* ZYBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5171D1F5E5127003947BD /* ZYBannerTests.m */; };
 		1AB517291F5E5127003947BD /* ZYBannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB517281F5E5127003947BD /* ZYBannerUITests.m */; };
+		1AB517561F5EA5F6003947BD /* ZYBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB517531F5EA5F6003947BD /* ZYBanner.m */; };
+		1AB517571F5EA5F6003947BD /* ZYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB517551F5EA5F6003947BD /* ZYPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1AB517241F5E5127003947BD /* ZYBannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYBannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB517281F5E5127003947BD /* ZYBannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBannerUITests.m; sourceTree = "<group>"; };
 		1AB5172A1F5E5127003947BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB517521F5EA5F6003947BD /* ZYBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBanner.h; sourceTree = "<group>"; };
+		1AB517531F5EA5F6003947BD /* ZYBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBanner.m; sourceTree = "<group>"; };
+		1AB517541F5EA5F6003947BD /* ZYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPageControl.h; sourceTree = "<group>"; };
+		1AB517551F5EA5F6003947BD /* ZYPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		1AB517021F5E5127003947BD /* ZYBanner */ = {
 			isa = PBXGroup;
 			children = (
+				1AB517511F5EA5F6003947BD /* ZYBannerView */,
 				1AB517061F5E5127003947BD /* AppDelegate.h */,
 				1AB517071F5E5127003947BD /* AppDelegate.m */,
 				1AB517091F5E5127003947BD /* ViewController.h */,
@@ -138,6 +145,17 @@
 				1AB5172A1F5E5127003947BD /* Info.plist */,
 			);
 			path = ZYBannerUITests;
+			sourceTree = "<group>";
+		};
+		1AB517511F5EA5F6003947BD /* ZYBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				1AB517521F5EA5F6003947BD /* ZYBanner.h */,
+				1AB517531F5EA5F6003947BD /* ZYBanner.m */,
+				1AB517541F5EA5F6003947BD /* ZYPageControl.h */,
+				1AB517551F5EA5F6003947BD /* ZYPageControl.m */,
+			);
+			path = ZYBannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB5170B1F5E5127003947BD /* ViewController.m in Sources */,
+				1AB517571F5EA5F6003947BD /* ZYPageControl.m in Sources */,
 				1AB517081F5E5127003947BD /* AppDelegate.m in Sources */,
+				1AB517561F5EA5F6003947BD /* ZYBanner.m in Sources */,
 				1AB517051F5E5127003947BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +538,7 @@
 				1AB5172F1F5E5127003947BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AB517301F5E5127003947BD /* Build configuration list for PBXNativeTarget "ZYBannerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +547,7 @@
 				1AB517321F5E5127003947BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AB517331F5E5127003947BD /* Build configuration list for PBXNativeTarget "ZYBannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +556,7 @@
 				1AB517351F5E5127003947BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
